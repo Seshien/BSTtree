@@ -35,14 +35,20 @@ void Tree::addNodeToNode(Node * node, Node * root)
 	if (node->value > root->value)
 	{
 		if (root->right == nullptr)
+		{
 			root->right = node;
+			node->parent = root;
+		}
 		else
 			this->addNodeToNode(node, root->right);
 	}
 	else
 	{
 		if (root->left == nullptr)
+		{
 			root->left = node;
+			node->parent = root;
+		}
 		else
 			this->addNodeToNode(node, root->left);
 	}
@@ -50,7 +56,7 @@ void Tree::addNodeToNode(Node * node, Node * root)
 
 void Tree::addNode(int value)
 {
-	std::unique_ptr<Node> node;
+	std::unique_ptr<Node> node = std::make_unique<Node>();
 	auto n = node.get();
 	n->value = value;
 
@@ -69,6 +75,8 @@ void Tree::inOrder()
 	else
 		this->_inOrder(_root);
 }
+
+
 void Tree::_inOrder(Node* node)
 {
 	if (node->left != nullptr)
@@ -85,6 +93,7 @@ void Tree::preOrder()
 	else
 		this->_preOrder(_root);
 }
+
 void Tree::_preOrder(Node* node)
 {
 	std::cout << node->value << std::endl;
