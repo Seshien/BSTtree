@@ -1,20 +1,19 @@
 #pragma once
 #include "pch.h"
 
-class Node
+class  Node
 {
 public:
+	Node()
+	{
+		parent = nullptr;
+		left = nullptr;
+		right = nullptr;
+		value = 0;
+	}
 
-	Node(int value);
-
-	Node(Node * parent, int value);
-
-
-private:
-
-	Node * _parent;
-	Node * _left;
-	Node * _right;
-	int _value;
-
+	Node * parent;
+	Node * left;
+	Node * right;
+	int value;
 };

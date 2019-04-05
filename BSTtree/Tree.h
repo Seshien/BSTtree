@@ -16,6 +16,8 @@ public:
 	void deleteNode(int value);
 	void deleteManyNodes(int n, const std::vector<int> & values);
 
+	void addNode(int value);
+
 	//
 	void inOrder();
 	void preOrder();
@@ -29,7 +31,11 @@ public:
 private:
 
 	void createNonAVL(const std::vector<int> & arr);
+	void createAVL(const std::vector<int> & arr);
+
+	void addNodeToNode(Node* node, Node * root);
 
 	std::vector<std::unique_ptr<Node>> _nodes;
-	int height;
+	Node * _root = nullptr;
+	bool _AVL = false;
 };
