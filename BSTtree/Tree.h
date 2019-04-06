@@ -6,7 +6,6 @@ class Tree
 {
 public:
 
-
 	Tree();
 	Tree(const std::vector<int> & arr, bool avl = false);
 
@@ -17,6 +16,9 @@ public:
 	void deleteManyNodes(int n, const std::vector<int> & values);
 
 	void addNode(int value);
+
+	void createNonAVL(const std::vector<int> & arr);
+	void createAVL(const std::vector<int> & arr);
 
 	//
 	void inOrder();
@@ -32,8 +34,7 @@ public:
 
 private:
 
-	void createNonAVL(const std::vector<int> & arr);
-	void createAVL(const std::vector<int> & arr);
+
 
 	void addNodeToNode(Node* node, Node * root);
 	void _inOrder(Node* node);

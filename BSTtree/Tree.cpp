@@ -67,11 +67,12 @@ void Tree::addNode(int value)
 
 	_nodes.push_back(std::move(node));
 }
+
 void Tree::inOrder()
 {
 	std::cout << "Starting inOrder" << std::endl;
 	if (_root == nullptr)
-		std::cout << "Tree don't exist." << std::endl;
+		std::cout << "Tree doesn't exist." << std::endl;
 	else
 		this->_inOrder(_root);
 }
@@ -89,7 +90,7 @@ void Tree::preOrder()
 {
 	std::cout << "Starting preOrder" << std::endl;
 	if (_root == nullptr)
-		std::cout << "Tree don't exist." << std::endl;
+		std::cout << "Tree doesn't exist." << std::endl;
 	else
 		this->_preOrder(_root);
 }
