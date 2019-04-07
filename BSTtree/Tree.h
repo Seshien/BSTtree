@@ -10,7 +10,6 @@ public:
 	Tree(const std::vector<int> & arr, bool avl = false);
 
 	Node * findMax();
-	Node * findValue(int value);
 
 	void deleteNode(int value);
 	void deleteManyNodes(int n, const std::vector<int> & values);
@@ -34,11 +33,13 @@ public:
 
 private:
 
-
-
 	void addNodeToNode(Node* node, Node * root);
+	void avlNext(const std::vector<int> & arr, size_t beg, size_t end);
+
 	void _inOrder(Node* node);
 	void _preOrder(Node* node);
+
+
 	std::vector<std::unique_ptr<Node>> _nodes;
 	Node * _root = nullptr;
 	bool _AVL = false;

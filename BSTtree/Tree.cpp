@@ -18,6 +18,24 @@ Tree::Tree(const std::vector<int>& arr, bool avl)
 	}
 }
 
+Node * Tree::findMax()
+{
+	if (_root == nullptr)
+		return nullptr;
+	Node * n = _root;
+	while (n->right != nullptr)
+	{
+		std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
+		n = n->right;
+	}	
+	return n;
+}
+
+void Tree::deleteNode(int value)
+{
+}
+
+
 void Tree::createNonAVL(const std::vector<int>& arr)
 {
 	for (size_t i = 0; i < arr.size(); i++)
@@ -28,6 +46,7 @@ void Tree::createNonAVL(const std::vector<int>& arr)
 
 void Tree::createAVL(const std::vector<int>& arr)
 {
+
 }
 
 void Tree::addNodeToNode(Node * node, Node * root)
@@ -52,6 +71,11 @@ void Tree::addNodeToNode(Node * node, Node * root)
 		else
 			this->addNodeToNode(node, root->left);
 	}
+}
+
+void Tree::avlNext(const std::vector<int>& arr, size_t beg, size_t end)
+{
+
 }
 
 void Tree::addNode(int value)
