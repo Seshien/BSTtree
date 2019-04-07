@@ -127,3 +127,42 @@ void Tree::_preOrder(Node* node)
 	if (node->right != nullptr)
 		_preOrder(node->right);
 }
+
+void Tree::showSubTree(int value)
+{
+	Node * subroot = this->findValue(value);
+	if (subroot == nullptr)
+		return;
+	this->_inOrder(subroot);
+}
+
+Node * Tree::findValue(int value)
+{
+	Node * result = nullptr;
+	std::cout << "Starting search" << std::endl;
+	if (_root == nullptr)
+		std::cout << "Tree doesn't exist." << std::endl;
+	else
+	{
+		result = this->_findValue(_root, value);
+		if (result == nullptr)
+			std::cout << "Wartoœæ nieznaleziona." << std::endl;
+		else
+			return result;
+	}
+	return nullptr;
+}
+
+Node * Tree::_findValue(Node* node, int value)
+{
+	Node * result = nullptr;
+	if (node->value == value)  return node;
+	if (node->left != nullptr)
+		if ((result = _findValue(node->left, value)) != nullptr)
+			return result;
+	if (node->right != nullptr)
+		if ((result = _findValue(node->right, value)) != nullptr)
+			return result;
+	return result;
+
+}

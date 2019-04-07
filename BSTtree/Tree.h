@@ -26,10 +26,12 @@ public:
 
 	void postOrderDelete();
 
-	void showSubTree();
+	void showSubTree(int value);
+	Node * findValue(int value);
 	//
 
 	void balance();
+
 
 private:
 
@@ -39,6 +41,7 @@ private:
 	void _inOrder(Node* node);
 	void _preOrder(Node* node);
 
+	Node * _findValue(Node* node, int value);
 
 	std::vector<std::unique_ptr<Node>> _nodes;
 	Node * _root = nullptr;
