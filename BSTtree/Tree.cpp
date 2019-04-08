@@ -46,7 +46,7 @@ void Tree::createNonAVL(const std::vector<int>& arr)
 
 void Tree::createAVL(const std::vector<int>& arr)
 {
-
+	this->avlNext(arr.cbegin(), arr.cend()-1);
 }
 
 void Tree::addNodeToNode(Node * node, Node * root)
@@ -73,9 +73,22 @@ void Tree::addNodeToNode(Node * node, Node * root)
 	}
 }
 
-void Tree::avlNext(const std::vector<int>& arr, size_t beg, size_t end)
+void Tree::avlNext(const std::vector<int>::const_iterator & beg, const std::vector<int>::const_iterator & end)
 {
-
+	if (beg == end)
+		this->addNode(*beg);
+	else if (beg + 1 == end)
+	{
+		this->addNode(*beg);
+		this->addNode(*end);
+	}
+	else
+	{
+		auto piv = (beg + (end - beg) / 2);
+		this->addNode(*piv);
+		this->avlNext(beg, piv - 1);
+		this->avlNext(piv + 1, end);
+	}
 }
 
 void Tree::addNode(int value)

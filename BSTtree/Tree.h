@@ -36,7 +36,7 @@ public:
 private:
 
 	void addNodeToNode(Node* node, Node * root);
-	void avlNext(const std::vector<int> & arr, size_t beg, size_t end);
+	void avlNext(const std::vector<int>::const_iterator & beg, const std::vector<int>::const_iterator & end);
 
 	void _inOrder(Node* node);
 	void _preOrder(Node* node);
