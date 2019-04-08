@@ -12,7 +12,7 @@ public:
 	Node * findMax();
 
 	void deleteNode(int value);
-	void deleteManyNodes(int n, const std::vector<int> & values);
+	void deleteManyNodes(const std::vector<int> & values);
 
 	void addNode(int value);
 
@@ -40,6 +40,7 @@ private:
 
 	void _inOrder(Node* node);
 	void _preOrder(Node* node);
+	void _postOrder(Node* node);
 
 	Node * _findValue(Node* node, int value);
 

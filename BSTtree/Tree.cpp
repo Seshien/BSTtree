@@ -33,6 +33,109 @@ Node * Tree::findMax()
 
 void Tree::deleteNode(int value)
 {
+	Node * n = this->findValue(value);
+	if (n == nullptr)
+		return;
+
+	if (n->right == nullptr && n->left == nullptr)
+	{
+		if (n != _root)
+		{
+			if (n->parent->right == n)
+				n->parent->right = nullptr;
+			else
+				n->parent->left = nullptr;
+		}
+		else
+		{
+			_root = nullptr;
+		}
+		
+	}
+	else if (n->right != nullptr && n->left == nullptr)
+	{
+		if (n != _root)
+		{
+			if (n->parent->right == n)
+				n->parent->right = n->right;
+			else
+				n->parent->left = n->right;
+		}
+		else
+		{
+			_root = n->right;
+		}
+
+		n->right->parent = n->parent;
+	}
+	else if (n->right == nullptr && n->left != nullptr)
+	{
+		if (n != _root)
+		{
+			if (n->parent->right == n)
+				n->parent->right = n->left;
+			else
+				n->parent->left = n->left;
+		}
+		else
+		{
+			_root = n->left;
+		}
+
+		n->left->parent = n->parent;
+	}
+	else
+	{
+		auto nnode = n->right;
+		while (nnode->left != nullptr)
+			nnode = nnode->left;
+
+		if (n != _root)
+		{
+			if (n->parent->right == n)
+				n->parent->right = nnode;
+			else
+				n->parent->left = nnode;
+		}
+		else
+		{
+			_root = nnode;
+		}
+		if (nnode->parent->right == nnode)
+			nnode->parent->right = nullptr;
+		else
+			nnode->parent->left = nullptr;
+
+		nnode->parent = n->parent;
+
+		nnode->left = n->left;
+		n->left->parent = nnode;
+
+		auto nodeAuted = nnode->right;
+
+		if (n->right != nnode)
+		{
+			nnode->right = n->right;
+			n->right->parent = nnode;
+		}
+			
+		if (nodeAuted != nullptr)
+		{
+			nnode->right->parent = nullptr;
+			this->addNodeToNode(nnode->right, nnode);
+		}
+			
+	}
+
+}
+
+void Tree::deleteManyNodes(const std::vector<int>& values)
+{
+	for (size_t i = 0; i < values.size(); i++)
+	{
+		this->deleteNode(values[i]);
+	}
+
 }
 
 
@@ -132,6 +235,12 @@ void Tree::preOrder()
 		this->_preOrder(_root);
 }
 
+void Tree::postOrderDelete()
+{
+	this->_postOrder(_root);
+	this->_nodes.clear();
+}
+
 void Tree::_preOrder(Node* node)
 {
 	std::cout << node->value << std::endl;
@@ -139,6 +248,29 @@ void Tree::_preOrder(Node* node)
 		_preOrder(node->left);
 	if (node->right != nullptr)
 		_preOrder(node->right);
+}
+
+void Tree::_postOrder(Node * node)
+{
+	if (node->left != nullptr)
+		_postOrder(node->left);
+	if (node->right != nullptr)
+		_postOrder(node->right);
+
+	std::cout <<"Usuwam: "<< node->value << std::endl;
+
+	if (node != _root)
+	{
+		if (node->parent->right == node)
+			node->parent->right = nullptr;
+		else
+			node->parent->left = nullptr;
+	}
+	else
+	{
+		_root = nullptr;
+	}
+
 }
 
 void Tree::showSubTree(int value)

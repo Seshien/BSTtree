@@ -16,4 +16,5 @@ public:
 	Node * left;
 	Node * right;
 	int value;
+	size_t index;
 };
