@@ -47,6 +47,8 @@ private:
 	void RRotation(Node *parent);
 	void LRotation(Node * parent);
 
+	int getLog(int x);
+
 	std::pair<Node*, Node*> _findValue(std::pair<Node *, Node*>, int value);
 
 	Node * _root = nullptr;

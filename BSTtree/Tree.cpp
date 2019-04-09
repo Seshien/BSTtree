@@ -322,6 +322,18 @@ void Tree::LRotation(Node * parent)
 	}
 }
 
+int Tree::getLog(int x)
+{
+	int res = 1;
+	x = x >> 1;
+	while (x > 0)
+	{
+		res = res << 1;
+		x = x >> 1;
+	}
+	return res;
+}
+
 void Tree::showSubTree(int value)
 {
 	Node * subroot = this->findValue(value).second;
@@ -348,7 +360,42 @@ std::pair<Node*, Node*> Tree::findValue(int value)
 
 void Tree::balance()
 {
-
+	int n = 0;
+	Node * p = _root;
+	while (p != nullptr)
+	{
+		if (p->left != nullptr)
+		{
+			Node * temp = p->left;
+			this->RRotation(p);
+			p = temp;
+		}
+		else
+		{
+			n++;
+			p = p->right;
+		}
+	}
+	int s = n + 1 - getLog(n + 1);
+	p = _root;
+	for (size_t i = 0; i < s; i++)
+	{
+		Node * temp = p->right;
+		this->LRotation(p);
+		p = temp->right;
+	}
+	n = n - 2;
+	while (n > 1)
+	{
+		n /= 2;
+		p = _root;
+		for (size_t i = 0; i < n; i++)
+		{
+			Node * temp = p->right;
+			this->LRotation(p);
+			p = temp->right;
+		}
+	}
 }
 
 
