@@ -345,7 +345,7 @@ void Tree::showSubTree(int value)
 	Node * subroot = this->findValue(value).second;
 	if (subroot == nullptr)
 		return;
-	this->_inOrder(subroot);
+	this->_preOrder(subroot);
 }
 
 std::pair<Node*, Node*> Tree::findValue(int value)
