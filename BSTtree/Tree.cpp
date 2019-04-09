@@ -150,24 +150,30 @@ void Tree::createAVL(const std::vector<int>& arr)
 
 void Tree::addNodeToNode(Node * node, Node * root)
 {
-	if (node->value > root->value)
+	while (true)
 	{
-		if (root->right == nullptr)
+		if (node->value > root->value)
 		{
-			root->right = node;
+			if (root->right == nullptr)
+			{
+				root->right = node;
+				break;
+			}
+			else
+				root = root->right;
 		}
 		else
-			this->addNodeToNode(node, root->right);
-	}
-	else
-	{
-		if (root->left == nullptr)
 		{
-			root->left = node;
+			if (root->left == nullptr)
+			{
+				root->left = node;
+				break;
+			}
+			else
+				root = root->left;
 		}
-		else
-			this->addNodeToNode(node, root->left);
 	}
+	
 }
 
 void Tree::avlNext(const std::vector<int>::const_iterator & beg, const std::vector<int>::const_iterator & end)
