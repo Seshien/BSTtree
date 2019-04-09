@@ -358,16 +358,46 @@ std::pair<Node*, Node*> Tree::findValue(int value)
 	return std::make_pair<Node*,Node*>(nullptr, nullptr);
 }
 
+
 void Tree::balanceCheck()
 {
-	if (_balanceCheck(_root, 1))
+	std::pair<int, int> result = _balanceCheck(_root, 1);
+	std::cout << "Min to " << result.first << " Max to " << result.second << std::endl;
+	if ((result.second - result.first) < 2 )
 		std::cout << "Drzewo zbalansowane." << std::endl;
 	else
 		std::cout << "Drzewo niezbalansowane." << std::endl;
 }
-bool Tree::_balanceCheck(Node* node,int height)
+
+std::pair<int, int> Tree::_balanceCheck(Node* node, int height)
 {
-	
+	std::pair<int, int> result = std::make_pair<int, int>(99999, -1);
+	std::pair<int, int> result2 = std::make_pair<int, int>(99999, -1);
+	std::pair<int, int> result3 = std::make_pair<int, int>(99999, -1);
+	if (node->left != nullptr)
+		result = _balanceCheck(node->left, height + 1);
+	if (node->right != nullptr)
+		result2 = _balanceCheck(node->right, height + 1);
+	if ((node->left == nullptr) || (node->right == nullptr))
+	{
+		result3.first = height;
+		result3.second = height;
+	}
+		/*
+		if (result2.first == -1)
+			result2.first = result.first;
+		if (result2.second == -1)
+			result2.second = result.second;
+		*/
+	if (result.first > result2.first)
+		result.first = result2.first;
+	if (result.second < result2.second)
+		result.second = result2.second;
+	if (result.first > result3.first)
+		result.first = result3.first;
+	if (result.second < result3.second)
+		result.second = result3.second;
+	return result;
 }
 void Tree::balance()
 {
