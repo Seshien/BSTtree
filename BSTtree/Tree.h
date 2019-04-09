@@ -7,6 +7,8 @@ class Tree
 public:
 
 	Tree();
+
+	~Tree() { this->postOrderDelete(); }
 	Tree(const std::vector<int> & arr, bool avl = false);
 
 	Node * findMax();
@@ -27,7 +29,7 @@ public:
 	void postOrderDelete();
 
 	void showSubTree(int value);
-	Node * findValue(int value);
+	std::pair<Node*, Node*> findValue(int value);
 	//
 
 	void balance();
@@ -40,11 +42,10 @@ private:
 
 	void _inOrder(Node* node);
 	void _preOrder(Node* node);
-	void _postOrder(Node* node);
+	void _postOrder(Node* parent, Node* node);
 
-	Node * _findValue(Node* node, int value);
+	std::pair<Node*, Node*> _findValue(std::pair<Node *, Node*>, int value);
 
-	std::vector<std::unique_ptr<Node>> _nodes;
 	Node * _root = nullptr;
 	bool _AVL = false;
 };

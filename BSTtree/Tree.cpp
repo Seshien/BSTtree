@@ -33,100 +33,96 @@ Node * Tree::findMax()
 
 void Tree::deleteNode(int value)
 {
-	Node * n = this->findValue(value);
+	auto a = this->findValue(value);
+	Node * n = a.second;
+	Node * parent = a.first;
+	bool right = false;
 	if (n == nullptr)
 		return;
+
+	if (n == parent->right)
+		right = true;
 
 	if (n->right == nullptr && n->left == nullptr)
 	{
 		if (n != _root)
 		{
-			if (n->parent->right == n)
-				n->parent->right = nullptr;
+			if (right)
+				parent->right = nullptr;
 			else
-				n->parent->left = nullptr;
+				parent->left = nullptr;
 		}
 		else
 		{
 			_root = nullptr;
 		}
-		
 	}
 	else if (n->right != nullptr && n->left == nullptr)
 	{
 		if (n != _root)
 		{
-			if (n->parent->right == n)
-				n->parent->right = n->right;
+			if (parent->right == n)
+				parent->right = n->right;
 			else
-				n->parent->left = n->right;
+				parent->left = n->right;
 		}
 		else
 		{
 			_root = n->right;
 		}
 
-		n->right->parent = n->parent;
 	}
 	else if (n->right == nullptr && n->left != nullptr)
 	{
 		if (n != _root)
 		{
-			if (n->parent->right == n)
-				n->parent->right = n->left;
+			if (parent->right == n)
+				parent->right = n->left;
 			else
-				n->parent->left = n->left;
+				parent->left = n->left;
 		}
 		else
 		{
 			_root = n->left;
 		}
-
-		n->left->parent = n->parent;
 	}
 	else
 	{
 		auto nnode = n->right;
+		auto nnodeParent = n;
 		while (nnode->left != nullptr)
+		{
+			nnodeParent = nnode;
 			nnode = nnode->left;
-
+		}
 		if (n != _root)
 		{
-			if (n->parent->right == n)
-				n->parent->right = nnode;
+			if (parent->right == n)
+				parent->right = nnode;
 			else
-				n->parent->left = nnode;
+				parent->left = nnode;
 		}
 		else
 		{
 			_root = nnode;
 		}
-		if (nnode->parent->right == nnode)
-			nnode->parent->right = nullptr;
+		if (nnodeParent->right == nnode)
+			nnodeParent->right = nullptr;
 		else
-			nnode->parent->left = nullptr;
-
-		nnode->parent = n->parent;
+			nnodeParent->left = nullptr;
 
 		nnode->left = n->left;
-		n->left->parent = nnode;
 
 		auto nodeAuted = nnode->right;
 
 		if (n->right != nnode)
-		{
 			nnode->right = n->right;
-			n->right->parent = nnode;
-		}
 			
 		if (nodeAuted != nullptr)
-		{
-			nnode->right->parent = nullptr;
-			this->addNodeToNode(nnode->right, nnode);
-		}
-			
+			this->addNodeToNode(nnode->right, nnode);			
 	}
 
+	delete n;
 }
 
 void Tree::deleteManyNodes(const std::vector<int>& values)
@@ -137,7 +133,6 @@ void Tree::deleteManyNodes(const std::vector<int>& values)
 	}
 
 }
-
 
 void Tree::createNonAVL(const std::vector<int>& arr)
 {
@@ -159,7 +154,6 @@ void Tree::addNodeToNode(Node * node, Node * root)
 		if (root->right == nullptr)
 		{
 			root->right = node;
-			node->parent = root;
 		}
 		else
 			this->addNodeToNode(node, root->right);
@@ -169,7 +163,6 @@ void Tree::addNodeToNode(Node * node, Node * root)
 		if (root->left == nullptr)
 		{
 			root->left = node;
-			node->parent = root;
 		}
 		else
 			this->addNodeToNode(node, root->left);
@@ -196,16 +189,13 @@ void Tree::avlNext(const std::vector<int>::const_iterator & beg, const std::vect
 
 void Tree::addNode(int value)
 {
-	std::unique_ptr<Node> node = std::make_unique<Node>();
-	auto n = node.get();
+	Node * n = new Node;
 	n->value = value;
 
 	if (_root == nullptr)
 		_root = n;
 	else
 		this->addNodeToNode(n, _root);
-
-	_nodes.push_back(std::move(node));
 }
 
 void Tree::inOrder()
@@ -237,8 +227,7 @@ void Tree::preOrder()
 
 void Tree::postOrderDelete()
 {
-	this->_postOrder(_root);
-	this->_nodes.clear();
+	this->_postOrder(nullptr, _root);
 }
 
 void Tree::_preOrder(Node* node)
@@ -250,64 +239,63 @@ void Tree::_preOrder(Node* node)
 		_preOrder(node->right);
 }
 
-void Tree::_postOrder(Node * node)
+void Tree::_postOrder(Node* parent, Node * node)
 {
 	if (node->left != nullptr)
-		_postOrder(node->left);
+		_postOrder(node, node->left);
 	if (node->right != nullptr)
-		_postOrder(node->right);
+		_postOrder(node, node->right);
 
 	std::cout <<"Usuwam: "<< node->value << std::endl;
 
 	if (node != _root)
 	{
-		if (node->parent->right == node)
-			node->parent->right = nullptr;
+		if (parent->right == node)
+			parent->right = nullptr;
 		else
-			node->parent->left = nullptr;
+			parent->left = nullptr;
 	}
 	else
 	{
 		_root = nullptr;
 	}
-
+	delete node;
 }
 
 void Tree::showSubTree(int value)
 {
-	Node * subroot = this->findValue(value);
+	Node * subroot = this->findValue(value).second;
 	if (subroot == nullptr)
 		return;
 	this->_inOrder(subroot);
 }
 
-Node * Tree::findValue(int value)
+std::pair<Node*, Node*> Tree::findValue(int value)
 {
-	Node * result = nullptr;
+	std::pair<Node*, Node*> result = std::make_pair<Node*, Node*>(nullptr, nullptr);
 	std::cout << "Starting search" << std::endl;
 	if (_root == nullptr)
 		std::cout << "Tree doesn't exist." << std::endl;
 	else
 	{
-		result = this->_findValue(_root, value);
-		if (result == nullptr)
+		result = this->_findValue(std::make_pair(nullptr, _root), value);
+		if (result.second == nullptr)
 			std::cout << "Wartoœæ nieznaleziona." << std::endl;
 		else
 			return result;
 	}
-	return nullptr;
+	return std::make_pair<Node*,Node*>(nullptr, nullptr);
 }
 
-Node * Tree::_findValue(Node* node, int value)
+
+std::pair<Node*, Node*> Tree::_findValue(std::pair<Node *, Node*> nodes, int value)
 {
-	Node * result = nullptr;
-	if (node->value == value)  return node;
-	if (node->left != nullptr)
-		if ((result = _findValue(node->left, value)) != nullptr)
-			return result;
-	if (node->right != nullptr)
-		if ((result = _findValue(node->right, value)) != nullptr)
-			return result;
-	return result;
+	if (nodes.second->value == value)  return nodes;
+	if (nodes.second->left != nullptr)
+		return _findValue(std::make_pair(nodes.second, nodes.second->left), value);
+	if (nodes.second->right != nullptr)
+		return _findValue(std::make_pair(nodes.second, nodes.second->right), value);
+
+	return std::make_pair<Node*,Node*>(nullptr, nullptr);
 
 }
