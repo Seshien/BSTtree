@@ -201,9 +201,9 @@ void Tree::addNode(int value)
 
 void Tree::inOrder()
 {
-	std::cout << "Starting inOrder" << std::endl;
+	std::cout << "Start inOrder" << std::endl;
 	if (_root == nullptr)
-		std::cout << "Tree doesn't exist." << std::endl;
+		std::cout << "Drzewo nie istnieje." << std::endl;
 	else
 		this->_inOrder(_root);
 }
@@ -219,9 +219,9 @@ void Tree::_inOrder(Node* node)
 }
 void Tree::preOrder()
 {
-	std::cout << "Starting preOrder" << std::endl;
+	std::cout << "Start preOrder" << std::endl;
 	if (_root == nullptr)
-		std::cout << "Tree doesn't exist." << std::endl;
+		std::cout << "Drzewo nie istnieje." << std::endl;
 	else
 		this->_preOrder(_root);
 }
@@ -333,14 +333,13 @@ void Tree::showSubTree(int value)
 std::pair<Node*, Node*> Tree::findValue(int value)
 {
 	std::pair<Node*, Node*> result = std::make_pair<Node*, Node*>(nullptr, nullptr);
-	std::cout << "Starting search" << std::endl;
 	if (_root == nullptr)
-		std::cout << "Tree doesn't exist." << std::endl;
+		std::cout << "Drzewo nie istnieje." << std::endl;
 	else
 	{
 		result = this->_findValue(std::make_pair(nullptr, _root), value);
 		if (result.second == nullptr)
-			std::cout << "Wartoœæ nieznaleziona." << std::endl;
+			std::cout << "Wartosc nieznaleziona." << std::endl;
 		else
 			return result;
 	}
@@ -355,11 +354,20 @@ void Tree::balance()
 
 std::pair<Node*, Node*> Tree::_findValue(std::pair<Node *, Node*> nodes, int value)
 {
+	std::pair<Node*, Node*> result = std::make_pair<Node*, Node*>(nullptr, nullptr);
 	if (nodes.second->value == value)  return nodes;
 	if (nodes.second->left != nullptr)
-		return _findValue(std::make_pair(nodes.second, nodes.second->left), value);
+	{
+		result = _findValue(std::make_pair(nodes.second, nodes.second->left), value);
+		if (result.second != nullptr)
+			return result;
+	}
 	if (nodes.second->right != nullptr)
-		return _findValue(std::make_pair(nodes.second, nodes.second->right), value);
+	{
+		result = _findValue(std::make_pair(nodes.second, nodes.second->right), value);
+		if (result.second != nullptr)
+			return result;
+	}
 
 	return std::make_pair<Node*,Node*>(nullptr, nullptr);
 
