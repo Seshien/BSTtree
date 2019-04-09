@@ -283,9 +283,9 @@ void Tree::RRotation(Node * parent)
 	A->left = B->right;
 	B->right = A;
 
-	if (A == _root)
+	if (A != _root)
 	{
-		if (p->left = A)
+		if (p->left == A)
 			p->left = B;
 		else
 			p->right = B;
@@ -309,7 +309,7 @@ void Tree::LRotation(Node * parent)
 	A->right = B->left;
 	B->left = A;
 
-	if (A == _root)
+	if (A != _root)
 	{
 		if (p->right = A)
 			p->right = B;
@@ -384,7 +384,7 @@ void Tree::balance()
 		this->LRotation(p);
 		p = temp->right;
 	}
-	n = n - 2;
+	n = n - s;
 	while (n > 1)
 	{
 		n /= 2;
