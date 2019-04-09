@@ -44,6 +44,9 @@ private:
 	void _preOrder(Node* node);
 	void _postOrder(Node* parent, Node* node);
 
+	void RRotation(Node *parent);
+	void LRotation(Node * parent);
+
 	std::pair<Node*, Node*> _findValue(std::pair<Node *, Node*>, int value);
 
 	Node * _root = nullptr;

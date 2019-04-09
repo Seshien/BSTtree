@@ -14,4 +14,5 @@ public:
 	Node * left;
 	Node * right;
 	int value;
+	int balanceFactor;
 };

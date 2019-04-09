@@ -262,6 +262,57 @@ void Tree::_postOrder(Node* parent, Node * node)
 	delete node;
 }
 
+void Tree::RRotation(Node * parent)
+{
+	auto a = this->findValue(parent->value);
+	Node * p = a.first;
+
+	auto A = parent;
+	auto B = parent->left;
+	if (B == nullptr)
+		return;
+	A->left = B->right;
+	B->right = A;
+
+	if (A == _root)
+	{
+		if (p->left = A)
+			p->left = B;
+		else
+			p->right = B;
+	}
+	else
+	{
+		_root = B;
+	}
+
+}
+
+void Tree::LRotation(Node * parent)
+{
+	auto a = this->findValue(parent->value);
+	Node * p = a.first;
+
+	auto A = parent;
+	auto B = parent->right;
+	if (B == nullptr)
+		return;
+	A->right = B->left;
+	B->left = A;
+
+	if (A == _root)
+	{
+		if (p->right = A)
+			p->right = B;
+		else
+			p->left = B;
+	}
+	else
+	{
+		_root = B;
+	}
+}
+
 void Tree::showSubTree(int value)
 {
 	Node * subroot = this->findValue(value).second;
@@ -285,6 +336,11 @@ std::pair<Node*, Node*> Tree::findValue(int value)
 			return result;
 	}
 	return std::make_pair<Node*,Node*>(nullptr, nullptr);
+}
+
+void Tree::balance()
+{
+
 }
 
 
