@@ -371,9 +371,9 @@ void Tree::balanceCheck()
 
 std::pair<int, int> Tree::_balanceCheck(Node* node, int height)
 {
-	std::pair<int, int> result = std::make_pair<int, int>(99999, -1);
-	std::pair<int, int> result2 = std::make_pair<int, int>(99999, -1);
-	std::pair<int, int> result3 = std::make_pair<int, int>(99999, -1);
+	std::pair<int, int> result = std::make_pair<int, int>(-1, -1);
+	std::pair<int, int> result2 = std::make_pair<int, int>(-1, -1);
+	std::pair<int, int> result3 = std::make_pair<int, int>(-1, -1);
 	if (node->left != nullptr)
 		result = _balanceCheck(node->left, height + 1);
 	if (node->right != nullptr)
@@ -383,18 +383,21 @@ std::pair<int, int> Tree::_balanceCheck(Node* node, int height)
 		result3.first = height;
 		result3.second = height;
 	}
-		/*
-		if (result2.first == -1)
-			result2.first = result.first;
-		if (result2.second == -1)
-			result2.second = result.second;
-		*/
-	if (result.first > result2.first)
-		result.first = result2.first;
+	if (result.first == -1)
+	{
+		if (result2.first != -1)
+			result.first = result2.first;
+		else if (result3.first != -1)
+			result.first = result3.first;
+	}
+	if (result2.first!=-1)
+		if (result.first > result2.first)
+			result.first = result2.first;
 	if (result.second < result2.second)
 		result.second = result2.second;
-	if (result.first > result3.first)
-		result.first = result3.first;
+	if (result3.first!=-1)
+		if (result.first > result3.first)
+			result.first = result3.first;
 	if (result.second < result3.second)
 		result.second = result3.second;
 	return result;
