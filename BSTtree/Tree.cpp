@@ -28,6 +28,7 @@ Node * Tree::findMax()
 		std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
 		n = n->right;
 	}	
+	std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
 	return n;
 }
 
@@ -228,6 +229,14 @@ void Tree::preOrder()
 void Tree::postOrderDelete()
 {
 	this->_postOrder(nullptr, _root);
+}
+
+bool Tree::existTree()
+{
+	if (this->_root == nullptr) 
+		return false;
+	else
+		return true;
 }
 
 void Tree::_preOrder(Node* node)

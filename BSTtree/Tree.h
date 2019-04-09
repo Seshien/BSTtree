@@ -27,7 +27,7 @@ public:
 	void preOrder();
 
 	void postOrderDelete();
-
+	bool existTree();
 	void showSubTree(int value);
 	std::pair<Node*, Node*> findValue(int value);
 	//
