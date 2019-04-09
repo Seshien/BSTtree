@@ -38,11 +38,14 @@ void Tree::deleteNode(int value)
 	Node * n = a.second;
 	Node * parent = a.first;
 	bool right = false;
+	bool par = true;
 	if (n == nullptr)
 		return;
-
-	if (n == parent->right)
-		right = true;
+	if (parent == nullptr) 
+		par = false;
+	if (par)
+		if (n == parent->right)
+			right = true;
 
 	if (n->right == nullptr && n->left == nullptr)
 	{
