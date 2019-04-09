@@ -30,7 +30,8 @@ public:
 	bool existTree();
 	void showSubTree(int value);
 	std::pair<Node*, Node*> findValue(int value);
-	//
+	void balanceCheck();
+	bool _balanceCheck(Node* node,int height);
 
 	void balance();
 

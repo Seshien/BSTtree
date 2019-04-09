@@ -358,6 +358,17 @@ std::pair<Node*, Node*> Tree::findValue(int value)
 	return std::make_pair<Node*,Node*>(nullptr, nullptr);
 }
 
+void Tree::balanceCheck()
+{
+	if (_balanceCheck(_root, 1))
+		std::cout << "Drzewo zbalansowane." << std::endl;
+	else
+		std::cout << "Drzewo niezbalansowane." << std::endl;
+}
+bool Tree::_balanceCheck(Node* node,int height)
+{
+	
+}
 void Tree::balance()
 {
 	int n = 0;
