@@ -18,75 +18,101 @@ void Tester::doTests()
 }
 void Tester::test()
 {
-	std::cout << "--------------- Test dla " << _testNum[progress] << " liczb. ---------------" << std::endl;
-	Tree bst;
-	std::vector<int> num = gen(_testNum[progress]);
-	auto begin = std::chrono::high_resolution_clock::now();
-	bst.createNonAVL(num);
-	auto end = std::chrono::high_resolution_clock::now();
-	double us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-	times[progress].timeBC = us / 1e6;
-	std::cout << "------------- Drzewo utworzone -------------" << std::endl;
+	int i;
+	for (i=0; i <= 10; i++)
+	{
+		std::cout << "--------------- Test dla " << _testNum[progress] << " liczb. ---------------" << std::endl;
+		Tree bst;
+		std::vector<int> num = gen(_testNum[progress]);
+		auto begin = std::chrono::high_resolution_clock::now();
+		bst.createNonAVL(num);
+		auto end = std::chrono::high_resolution_clock::now();
+		double us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		time[0][i] = us / 1e6;
+		std::cout << "------------- Drzewo utworzone -------------" << std::endl;
 
 
-	begin = std::chrono::high_resolution_clock::now();
-	bst.findMin();
-	end = std::chrono::high_resolution_clock::now();
-	us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-	times[progress].timeBM = us / 1e6;
+		begin = std::chrono::high_resolution_clock::now();
+		bst.findMin();
+		end = std::chrono::high_resolution_clock::now();
+		us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		time[1][i] = us / 1e6;
 
-	begin = std::chrono::high_resolution_clock::now();
-	bst.inOrder();
-	end = std::chrono::high_resolution_clock::now();
-	us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-	times[progress].timeBI = us / 1e6;
+		begin = std::chrono::high_resolution_clock::now();
+		bst.inOrder();
+		end = std::chrono::high_resolution_clock::now();
+		us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		time[2][i] = us / 1e6;
 
-	begin = std::chrono::high_resolution_clock::now();
-	bst.balance();
-	end = std::chrono::high_resolution_clock::now();
-	us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-	times[progress].timeBB = us / 1e6;
-	bst.postOrderDelete();
-
-
-	Tree avl;
-	//mergeSort(num);
-	begin = std::chrono::high_resolution_clock::now();
-	avl.createAVL(num);
-	end = std::chrono::high_resolution_clock::now();
-	us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-	times[progress].timeAC = us / 1e6;
-	std::cout << "------------- Drzewo utworzone -------------" << std::endl;
+		begin = std::chrono::high_resolution_clock::now();
+		bst.balance();
+		end = std::chrono::high_resolution_clock::now();
+		us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		time[3][i] = us / 1e6;
+		bst.postOrderDelete();
 
 
-	begin = std::chrono::high_resolution_clock::now();
-	avl.findMin();
-	end = std::chrono::high_resolution_clock::now();
-	us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-	times[progress].timeAM = us / 1e6;
+		Tree avl;
+		//mergeSort(num);
+		begin = std::chrono::high_resolution_clock::now();
+		avl.createAVL(num);
+		end = std::chrono::high_resolution_clock::now();
+		us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		time[4][i] = us / 1e6;
+		std::cout << "------------- Drzewo utworzone -------------" << std::endl;
 
-	begin = std::chrono::high_resolution_clock::now();
-	avl.inOrder();
-	end = std::chrono::high_resolution_clock::now();
-	us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
-	times[progress].timeAI = us / 1e6;
 
+		begin = std::chrono::high_resolution_clock::now();
+		avl.findMin();
+		end = std::chrono::high_resolution_clock::now();
+		us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		time[5][i] = us / 1e6;
+
+		begin = std::chrono::high_resolution_clock::now();
+		avl.inOrder();
+		end = std::chrono::high_resolution_clock::now();
+		us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		time[6][i] = us / 1e6;
+	}
 	//begin = std::chrono::high_resolution_clock::now();
 	//avl.balance();
 	//end = std::chrono::high_resolution_clock::now();
 	//us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 	//times[progress].timeAB = us / 1e6;
-	getData();
-	std::cout << "--------------- Test zakonczony ---------------" << std::endl;
-}
+	double sum[] = { 0,0,0,0,0,0,0 };
 
-void Tester::getData()
+	for (i = 0; i < 7; i++)
+	{
+		for (int j = 0; j < 10; j++)
+		{
+			sum[i] += time[i][j];
+		}
+		sum[i] /= 10.0;
+	}
+	double sumo[] = { 0,0,0,0,0,0,0 };
+	for (i = 0; i < 7; i++)
+	{
+		for (int j = 0; j < 10; j++)
+		{
+			sumo[i] += (sum[i] - time[i][j])*(sum[i] - time[i][j]);
+		}
+		sumo[i] /= 10.0;
+	}
+
+	getData(sum, sumo);
+	std::cout << "--------------- Test zakonczony ---------------" << std::endl;
+
+}
+void Tester::getData(double sum[], double sumo[])
 {
 	std::fstream file;
 	file.open("data.txt", std::ios::app);
 	std::string line;
-	line = std::to_string(_testNum[progress]) + ";" + std::to_string(times[progress].timeBC) + ";" + std::to_string(times[progress].timeBM) + ";" + std::to_string(times[progress].timeBI) + ";" + std::to_string(times[progress].timeBB)
-		+ ";;" + std::to_string(times[progress].timeAC) + ";" + std::to_string(times[progress].timeAM) + ";" + std::to_string(times[progress].timeAI) + ";" + std::to_string(times[progress].timeAB) + "\n";
+	line = std::to_string(_testNum[progress]) + ";" + std::to_string(sum[0]) + ";" + std::to_string(sum[1]) + ";" + std::to_string(sum[2]) + ";" + std::to_string(sum[3])
+		+ ";;" + std::to_string(sum[4]) + ";" + std::to_string(sum[5]) + ";" + std::to_string(sum[6]) + ";0" 
+		+ ";" + std::to_string(sumo[0]) + ";" + std::to_string(sumo[1]) + ";" + std::to_string(sumo[2]) + ";" + std::to_string(sumo[3])
+		+ ";;" + std::to_string(sumo[4]) + ";" + std::to_string(sumo[5]) + ";" + std::to_string(sumo[6]) + ";0"
+		+ "\n";
 	file << line;
 	file.close();
 	return;
