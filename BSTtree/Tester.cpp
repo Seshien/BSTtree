@@ -26,6 +26,8 @@ void Tester::test()
 	auto end = std::chrono::high_resolution_clock::now();
 	double us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 	times[progress].timeBC = us / 1e6;
+	std::cout << "------------- Drzewo utworzone -------------" << std::endl;
+
 
 	begin = std::chrono::high_resolution_clock::now();
 	bst.findMin();
@@ -54,6 +56,8 @@ void Tester::test()
 	end = std::chrono::high_resolution_clock::now();
 	us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 	times[progress].timeAC = us / 1e6;
+	std::cout << "------------- Drzewo utworzone -------------" << std::endl;
+
 
 	begin = std::chrono::high_resolution_clock::now();
 	avl.findMin();
@@ -73,7 +77,7 @@ void Tester::test()
 	//us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 	//times[progress].timeAB = us / 1e6;
 	getData();
-	std::cout << "--------------- Test zakonczony" << std::endl;
+	std::cout << "--------------- Test zakonczony ---------------" << std::endl;
 }
 
 void Tester::getData()
