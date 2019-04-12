@@ -32,6 +32,20 @@ Node * Tree::findMax()
 	return n;
 }
 
+Node * Tree::findMin()
+{
+	if (_root == nullptr)
+		return nullptr;
+	Node * n = _root;
+	while (n->left != nullptr)
+	{
+		//std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
+		n = n->left;
+	}
+	//std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
+	return n;
+}
+
 void Tree::deleteNode(int value)
 {
 	auto a = this->findValue(value);
@@ -123,7 +137,7 @@ void Tree::deleteNode(int value)
 			nnode->right = n->right;
 			
 		if (nodeAuted != nullptr)
-			this->addNodeToNode(nnode->right, nnode);			
+			this->addNodeToNode(nodeAuted, nnode);			
 	}
 
 	delete n;
@@ -210,9 +224,10 @@ void Tree::addNode(int value)
 
 void Tree::inOrder()
 {
-	std::cout << "Start inOrder" << std::endl;
+	//std::cout << "Start inOrder" << std::endl;
 	if (_root == nullptr)
-		std::cout << "Drzewo nie istnieje." << std::endl;
+	{ }
+		//std::cout << "Drzewo nie istnieje." << std::endl;
 	else
 		this->_inOrder(_root);
 }
@@ -222,7 +237,7 @@ void Tree::_inOrder(Node* node)
 {
 	if (node->left != nullptr)
 		_inOrder(node->left);
-	std::cout << node->value << std::endl;
+	//std::cout << node->value << std::endl;
 	if (node->right != nullptr)
 		_inOrder(node->right);
 }
@@ -237,6 +252,8 @@ void Tree::preOrder()
 
 void Tree::postOrderDelete()
 {
+	if (_root == nullptr)
+		return;
 	this->_postOrder(nullptr, _root);
 }
 
@@ -264,7 +281,7 @@ void Tree::_postOrder(Node* parent, Node * node)
 	if (node->right != nullptr)
 		_postOrder(node, node->right);
 
-	std::cout <<"Usuwam: "<< node->value << std::endl;
+	//std::cout <<"Usuwam: "<< node->value << std::endl;
 
 	if (node != _root)
 	{

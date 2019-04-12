@@ -12,6 +12,7 @@ public:
 	Tree(const std::vector<int> & arr, bool avl = false);
 
 	Node * findMax();
+	Node * findMin();
 
 	void deleteNode(int value);
 	void deleteManyNodes(const std::vector<int> & values);
