@@ -96,7 +96,7 @@ void Tester::test()
 		{
 			sumo[i] += (sum[i] - time[i][j])*(sum[i] - time[i][j]);
 		}
-		sumo[i]=sqrt(sumo[i] / 10.0);
+		sumo[i] /= 10.0;
 	}
 
 	getData(sum, sumo);
