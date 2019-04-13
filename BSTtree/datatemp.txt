@@ -1,0 +1,2 @@
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50000;12.956699;0.000000;0.000000;64.653432;;0.010954;0.000000;0.000000;0;2.904370;0.000000;0.000000;14.471702;;0.002462;0.000000;0.000000;0

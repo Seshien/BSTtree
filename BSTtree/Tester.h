@@ -28,4 +28,5 @@ private:
 	_times times[10];
 	double time[7][10];
 	void getData(double sum[], double sumo[]);
+	void createFileTemp(double sum[], double sumo[]);
 };

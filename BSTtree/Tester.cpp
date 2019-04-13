@@ -9,6 +9,22 @@ void Tester::createFile()
 	file << line;
 	file.close();
 }
+void Tester::createFileTemp(double sum[], double sumo[])
+{
+	char wait;
+	std::fstream file;
+	file.open("datatemp.txt", std::ios::out);
+	std::string line;
+	line = "Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania\n";
+	file << line;
+	line = std::to_string(_testNum[progress]) + ";" + std::to_string(sum[0]) + ";" + std::to_string(sum[1]) + ";" + std::to_string(sum[2]) + ";" + std::to_string(sum[3])
+		+ ";;" + std::to_string(sum[4]) + ";" + std::to_string(sum[5]) + ";" + std::to_string(sum[6]) + ";0"
+		+ ";" + std::to_string(sumo[0]) + ";" + std::to_string(sumo[1]) + ";" + std::to_string(sumo[2]) + ";" + std::to_string(sumo[3])
+		+ ";;" + std::to_string(sumo[4]) + ";" + std::to_string(sumo[5]) + ";" + std::to_string(sumo[6]) + ";0"
+		+ "\n";
+	file << line;
+	file.close();
+}
 void Tester::doTests()
 {
 	createFile();
@@ -19,7 +35,9 @@ void Tester::doTests()
 void Tester::test()
 {
 	int i;
-	for (i=0; i <= 10; i++)
+	double sum[] = { 0,0,0,0,0,0,0 };
+	double sumo[] = { 0,0,0,0,0,0,0 };
+	for (i=0; i < 10; i++)
 	{
 		std::cout << "--------------- Test dla " << _testNum[progress] << " liczb. ---------------" << std::endl;
 		Tree bst;
@@ -73,31 +91,34 @@ void Tester::test()
 		end = std::chrono::high_resolution_clock::now();
 		us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 		time[6][i] = us / 1e6;
+		for (int k = 0; k < 7; k++)
+		{
+			sum[k] = 0;
+			for (int j = 0; j <= i; j++)
+			{
+				sum[k] += time[k][j];
+			}
+			sum[k] /= i * 1.0;
+		}
+		for (int k = 0; k < 7; k++)
+		{
+			sumo[k] = 0;
+			for (int j = 0; j <= i; j++)
+			{
+				sumo[k] += (sum[k] - time[k][j])*(sum[k] - time[k][j]);
+			}
+			sumo[k] = sqrt(sumo[k] / 10.0);
+		}
+		createFileTemp(sum, sumo);
 	}
 	//begin = std::chrono::high_resolution_clock::now();
 	//avl.balance();
 	//end = std::chrono::high_resolution_clock::now();
 	//us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 	//times[progress].timeAB = us / 1e6;
-	double sum[] = { 0,0,0,0,0,0,0 };
 
-	for (i = 0; i < 7; i++)
-	{
-		for (int j = 0; j < 10; j++)
-		{
-			sum[i] += time[i][j];
-		}
-		sum[i] /= 10.0;
-	}
-	double sumo[] = { 0,0,0,0,0,0,0 };
-	for (i = 0; i < 7; i++)
-	{
-		for (int j = 0; j < 10; j++)
-		{
-			sumo[i] += (sum[i] - time[i][j])*(sum[i] - time[i][j]);
-		}
-		sumo[i]=sqrt(sumo[i] / 10.0);
-	}
+
+
 
 	getData(sum, sumo);
 	std::cout << "--------------- Test zakonczony ---------------" << std::endl;
