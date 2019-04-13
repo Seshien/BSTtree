@@ -39,10 +39,10 @@ Node * Tree::findMin()
 	Node * n = _root;
 	while (n->left != nullptr)
 	{
-		//std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
+		std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
 		n = n->left;
 	}
-	//std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
+	std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
 	return n;
 }
 
@@ -237,7 +237,7 @@ void Tree::_inOrder(Node* node)
 {
 	if (node->left != nullptr)
 		_inOrder(node->left);
-	//std::cout << node->value << std::endl;
+	std::cout << node->value << std::endl;
 	if (node->right != nullptr)
 		_inOrder(node->right);
 }
