@@ -9,11 +9,11 @@ void Tester::createFile()
 	file << line;
 	file.close();
 }
-void Tester::createFileTemp(double sum[], double sumo[])
+void Tester::createFileTemp(long double sum[], long double sumo[])
 {
 	char wait;
 	std::fstream file;
-	file.open("datatemp.txt", std::ios::out);
+	file.open("datatemp.txt", std::ios::app);
 	std::string line;
 	line = "Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania\n";
 	file << line;
@@ -27,7 +27,16 @@ void Tester::createFileTemp(double sum[], double sumo[])
 }
 void Tester::doTests()
 {
-	createFile();
+	char choice;
+	std::cout << "Czy chcesz testowac od poczatku? " << std::endl;
+	std::cin >> choice;
+	if (choice=='y')
+		createFile();
+	else
+	{
+		std::cout << "Podaj od ktorej wartosci chcesz kontynuowac " << std::endl <<"0 10,1 50,2 100,3 200,4 500,5 1000,6 2000,7 5000,8 10000,9 20000,10 50000,11 100000,12 200000,13 300000,14 400000,15 500000" << std::endl;
+		std::cin >> progress;
+	}
 	for (progress; progress < amountt; progress++)
 		test();
 
@@ -35,9 +44,9 @@ void Tester::doTests()
 void Tester::test()
 {
 	int i;
-	double sum[] = { 0,0,0,0,0,0,0 };
-	double sumo[] = { 0,0,0,0,0,0,0 };
-	for (i=0; i < 10; i++)
+	long double sum[] = { 0,0,0,0,0,0,0 };
+	long double sumo[] = { 0,0,0,0,0,0,0 };
+	for (i=1; i <= 5; i++)
 	{
 		std::cout << "--------------- Test dla " << _testNum[progress] << " liczb. ---------------" << std::endl;
 		Tree bst;
@@ -45,7 +54,7 @@ void Tester::test()
 		auto begin = std::chrono::high_resolution_clock::now();
 		bst.createNonAVL(num);
 		auto end = std::chrono::high_resolution_clock::now();
-		double us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+		long double us = std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
 		time[0][i] = us / 1e6;
 		std::cout << "------------- Drzewo utworzone -------------" << std::endl;
 
@@ -94,7 +103,7 @@ void Tester::test()
 		for (int k = 0; k < 7; k++)
 		{
 			sum[k] = 0;
-			for (int j = 0; j <= i; j++)
+			for (int j = 1; j <= i; j++)
 			{
 				sum[k] += time[k][j];
 			}
@@ -103,11 +112,11 @@ void Tester::test()
 		for (int k = 0; k < 7; k++)
 		{
 			sumo[k] = 0;
-			for (int j = 0; j <= i; j++)
+			for (int j = 1; j <= i; j++)
 			{
 				sumo[k] += (sum[k] - time[k][j])*(sum[k] - time[k][j]);
 			}
-			sumo[k] = sqrt(sumo[k] / 10.0);
+			sumo[k] = sqrt(sumo[k] / i * 1.0);
 		}
 		createFileTemp(sum, sumo);
 	}
@@ -124,7 +133,7 @@ void Tester::test()
 	std::cout << "--------------- Test zakonczony ---------------" << std::endl;
 
 }
-void Tester::getData(double sum[], double sumo[])
+void Tester::getData(long double sum[], long double sumo[])
 {
 	std::fstream file;
 	file.open("data.txt", std::ios::app);

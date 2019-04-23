@@ -39,10 +39,10 @@ Node * Tree::findMin()
 	Node * n = _root;
 	while (n->left != nullptr)
 	{
-		std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
+		std::cout <<  n->value << std::endl;
 		n = n->left;
 	}
-	std::cout << "Jestem w wierzcholku o wartosci: " << n->value << std::endl;
+	std::cout << n->value << std::endl;
 	return n;
 }
 
@@ -473,18 +473,19 @@ std::pair<Node*, Node*> Tree::_findValue(std::pair<Node *, Node*> nodes, int val
 {
 	std::pair<Node*, Node*> result = std::make_pair<Node*, Node*>(nullptr, nullptr);
 	if (nodes.second->value == value)  return nodes;
-	if (nodes.second->left != nullptr)
-	{
-		result = _findValue(std::make_pair(nodes.second, nodes.second->left), value);
-		if (result.second != nullptr)
-			return result;
-	}
 	if (nodes.second->right != nullptr)
 	{
 		result = _findValue(std::make_pair(nodes.second, nodes.second->right), value);
 		if (result.second != nullptr)
 			return result;
 	}
+	if (nodes.second->left != nullptr)
+	{
+		result = _findValue(std::make_pair(nodes.second, nodes.second->left), value);
+		if (result.second != nullptr)
+			return result;
+	}
+
 
 	return std::make_pair<Node*,Node*>(nullptr, nullptr);
 

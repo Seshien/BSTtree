@@ -1,2 +1,224 @@
 Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
-50000;6.293009;20.708582;17.366878;25.827745;;0.006784;0.005235;17.756677;0;0.744495;2.321305;1.923746;3.105579;;0.001271;0.001347;2.047374;0
+50000;5.955983;20.009972;16.864217;9.139584;;0.005850;0.004384;17.033684;0;0.697371;2.623306;1.876496;0.959475;;0.000689;0.000639;1.836272;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;-nan(ind);inf;inf;-nan(ind);;inf;inf;inf;0;-nan(ind);inf;inf;-nan(ind);;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.016919;0.013371;0.000002;;0.000006;0.006918;0.024526;0;0.000000;0.004576;0.003778;0.000001;;0.000002;0.001903;0.005492;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.013917;0.011129;0.000001;;0.000003;0.004732;0.017298;0;0.000000;0.003672;0.003128;0.000001;;0.000001;0.001425;0.003221;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.012317;0.009880;0.000001;;0.000003;0.005046;0.013892;0;0.000000;0.003290;0.002845;0.000001;;0.000001;0.001548;0.002591;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.011738;0.009685;0.000000;;0.000002;0.004212;0.012248;0;0.000000;0.003136;0.002786;0.000001;;0.000001;0.001568;0.002379;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000008;0.094978;0.066310;0.000012;;0.000024;0.013103;0.070485;0;0.000002;0.021478;0.014899;0.000003;;0.000006;0.003027;0.015950;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000006;0.064931;0.048671;0.000010;;0.000016;0.007735;0.050616;0;0.000001;0.012704;0.009022;0.000002;;0.000005;0.001934;0.009630;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000005;0.055924;0.047873;0.000009;;0.000012;0.006190;0.047363;0;0.000001;0.010061;0.008607;0.000001;;0.000005;0.001738;0.008198;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000005;0.050767;0.043596;0.000008;;0.000010;0.005274;0.042744;0;0.000001;0.008838;0.007544;0.000001;;0.000005;0.001725;0.007155;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000054;0.176121;0.141729;0.000049;;0.000018;0.007638;0.143466;0;0.000014;0.039747;0.032098;0.000011;;0.000004;0.001715;0.032151;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000070;0.126731;0.103431;0.000036;;0.000013;0.008213;0.113483;0;0.000021;0.023914;0.019614;0.000007;;0.000002;0.001980;0.021050;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000051;0.122708;0.097119;0.000043;;0.000012;0.006512;0.096592;0;0.000021;0.021937;0.016793;0.000011;;0.000002;0.001775;0.016107;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000041;0.113415;0.093327;0.000038;;0.000011;0.006707;0.097618;0;0.000021;0.019116;0.015068;0.000010;;0.000002;0.001859;0.016752;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000086;0.349614;0.314488;0.000338;;0.000041;0.011025;0.344098;0;0.000019;0.078222;0.070455;0.000082;;0.000009;0.002651;0.076943;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000069;0.253274;0.257330;0.000235;;0.000030;0.007723;0.261631;0;0.000013;0.046548;0.048465;0.000054;;0.000006;0.001738;0.047803;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000091;0.228104;0.222518;0.000195;;0.000026;0.006464;0.232766;0;0.000028;0.036540;0.037490;0.000046;;0.000004;0.001478;0.036850;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000079;0.211088;0.215003;0.000169;;0.000025;0.007167;0.235206;0;0.000028;0.030583;0.033830;0.000045;;0.000004;0.001933;0.038461;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000594;0.967755;0.817119;0.001730;;0.000102;0.015465;0.831455;0;0.000140;0.217139;0.182814;0.000388;;0.000023;0.003468;0.185930;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000395;0.668740;0.459598;0.001202;;0.000073;0.008148;0.473069;0;0.000089;0.126877;0.115498;0.000226;;0.000014;0.002337;0.116214;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000326;0.482064;0.359917;0.001027;;0.000064;0.005705;0.352035;0;0.000076;0.124595;0.105511;0.000175;;0.000010;0.002379;0.110944;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000316;0.389978;0.300861;0.000940;;0.000058;0.004556;0.296777;0;0.000072;0.132926;0.106843;0.000150;;0.000009;0.002462;0.111299;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.001719;0.478427;0.469915;0.006783;;0.000210;0.003607;0.466703;0;0.000384;0.107091;0.105100;0.001519;;0.000047;0.000889;0.104369;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.001439;0.355223;0.351650;0.004902;;0.000175;0.002641;0.376575;0;0.000274;0.065065;0.064242;0.000904;;0.000033;0.000611;0.070123;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.001257;0.320587;0.313422;0.004515;;0.000165;0.002556;0.335869;0;0.000214;0.051112;0.049613;0.000736;;0.000029;0.000577;0.054876;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.001139;0.298757;0.288517;0.004162;;0.000144;0.003470;0.306029;0;0.000185;0.042806;0.041311;0.000621;;0.000026;0.001373;0.046524;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.013277;1.015848;1.025214;0.027994;;0.000451;0.003442;1.061363;0;0.002980;0.227156;0.229245;0.006263;;0.000102;0.000806;0.237696;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.009770;0.755086;0.760093;0.021535;;0.000313;0.003032;0.774364;0;0.001804;0.137913;0.138849;0.003947;;0.000060;0.000647;0.142436;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.008499;0.674797;0.667567;0.019001;;0.000271;0.002503;0.678241;0;0.001379;0.106805;0.105859;0.003026;;0.000047;0.000541;0.108945;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.008183;0.636491;0.620334;0.017550;;0.000257;0.003543;0.626777;0;0.001223;0.090250;0.088318;0.002526;;0.000041;0.001490;0.091275;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.091304;2.635552;2.491907;0.131814;;0.001293;0.005787;2.558946;0;0.020455;0.589473;0.557260;0.029477;;0.000290;0.001295;0.572198;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.068635;2.033641;1.924596;0.099898;;0.000894;0.003855;1.975012;0;0.012594;0.372685;0.352639;0.018251;;0.000169;0.000749;0.361737;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.062180;1.827021;1.792710;0.090523;;0.000802;0.003115;1.782287;0;0.009958;0.291102;0.292856;0.014399;;0.000135;0.000611;0.284124;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.058438;1.735986;1.680090;0.086698;;0.000756;0.002967;1.684126;0;0.008416;0.249498;0.248745;0.012534;;0.000116;0.000557;0.241376;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10000;inf;inf;inf;inf;;inf;inf;inf;0;inf;inf;inf;inf;;inf;inf;inf;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.001449;0.000708;0.000000;;0.000000;0.000749;0.011322;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.006784;0.004367;0.000000;;0.000000;0.001789;0.013249;0;0.000000;0.005335;0.003659;0.000000;;0.000000;0.001040;0.001927;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.010758;0.008687;0.000000;;0.000001;0.002936;0.013050;0;0.000000;0.007111;0.006800;0.000000;;0.000000;0.001831;0.001598;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.010006;0.008432;0.000000;;0.000001;0.002586;0.011470;0;0.000000;0.006294;0.005905;0.000000;;0.000000;0.001697;0.003068;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10;0.000000;0.009430;0.008240;0.000000;;0.000001;0.002392;0.010478;0;0.000000;0.005747;0.005296;0.000000;;0.000000;0.001567;0.003385;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000004;0.032899;0.031088;0.000006;;0.000004;0.005245;0.036162;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000004;0.034511;0.030393;0.000006;;0.000004;0.003921;0.035481;0;0.000000;0.001612;0.000695;0.000000;;0.000000;0.001323;0.000681;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000004;0.034091;0.035772;0.000006;;0.000006;0.004771;0.035109;0;0.000000;0.001444;0.007628;0.000000;;0.000002;0.001616;0.000765;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000004;0.035465;0.035691;0.000006;;0.000005;0.005156;0.036486;0;0.000000;0.002687;0.006608;0.000000;;0.000002;0.001551;0.002476;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50;0.000004;0.037121;0.035103;0.000006;;0.000005;0.004683;0.035632;0;0.000000;0.004092;0.006026;0.000000;;0.000002;0.001680;0.002797;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000018;0.088101;0.081480;0.000024;;0.000010;0.007255;0.085232;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000021;0.101967;0.076944;0.000024;;0.000011;0.006433;0.084601;0;0.000002;0.013866;0.004535;0.000000;;0.000001;0.000822;0.000630;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000018;0.092865;0.075594;0.000029;;0.000014;0.006375;0.088596;0;0.000004;0.017142;0.004167;0.000008;;0.000004;0.000676;0.005673;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000017;0.093436;0.078273;0.000028;;0.000015;0.005533;0.082262;0;0.000004;0.014878;0.005879;0.000007;;0.000004;0.001572;0.012021;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100;0.000016;0.095344;0.075159;0.000028;;0.000014;0.005588;0.086313;0;0.000004;0.013844;0.008150;0.000006;;0.000004;0.001411;0.013463;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000052;0.210513;0.247624;0.000311;;0.000022;0.013439;0.313166;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000045;0.198702;0.212384;0.000246;;0.000021;0.011834;0.249495;0;0.000007;0.011812;0.035241;0.000066;;0.000001;0.001605;0.063672;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000050;0.191978;0.191913;0.000194;;0.000020;0.010257;0.215328;0;0.000009;0.013543;0.040817;0.000090;;0.000001;0.002588;0.070974;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000052;0.191654;0.178162;0.000179;;0.000021;0.008931;0.212319;0;0.000008;0.011742;0.042624;0.000083;;0.000001;0.003209;0.061686;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200;0.000049;0.186142;0.176702;0.000162;;0.000021;0.008000;0.198530;0;0.000010;0.015226;0.038236;0.000081;;0.000001;0.003421;0.061682;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000246;0.539879;0.419064;0.001159;;0.000069;0.012191;0.398322;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000361;0.504809;0.406390;0.000944;;0.000060;0.008464;0.436773;0;0.000114;0.035070;0.012674;0.000216;;0.000009;0.003727;0.038451;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000325;0.451490;0.311167;0.000867;;0.000054;0.007233;0.341642;0;0.000106;0.080658;0.135062;0.000206;;0.000011;0.003506;0.138151;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000325;0.369109;0.260805;0.000827;;0.000051;0.006265;0.287732;0;0.000092;0.158870;0.145913;0.000192;;0.000011;0.003469;0.151766;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+500;0.000300;0.323337;0.232255;0.000866;;0.000055;0.005386;0.254125;0;0.000096;0.169032;0.142453;0.000189;;0.000011;0.003565;0.151473;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.000890;0.220327;0.228487;0.003933;;0.000140;0.002939;0.226212;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.000841;0.237270;0.226190;0.003484;;0.000112;0.002303;0.226874;0;0.000049;0.016943;0.002297;0.000448;;0.000028;0.000636;0.000661;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.000858;0.238535;0.226128;0.003338;;0.000105;0.003595;0.223663;0;0.000046;0.013949;0.001878;0.000421;;0.000025;0.001899;0.004572;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.000951;0.236591;0.230416;0.003390;;0.000101;0.003067;0.225900;0;0.000167;0.012541;0.007603;0.000376;;0.000023;0.001881;0.005539;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+1000;0.000967;0.238507;0.228468;0.003346;;0.000103;0.002693;0.235589;0;0.000153;0.011853;0.007838;0.000347;;0.000021;0.001842;0.020002;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.007396;0.550974;0.552015;0.013145;;0.000208;0.001675;0.524945;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.006498;0.517400;0.565808;0.012933;;0.000188;0.001534;0.537071;0;0.000898;0.033574;0.013793;0.000212;;0.000019;0.000142;0.012126;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.006293;0.524571;0.549011;0.013305;;0.000179;0.002679;0.556781;0;0.000789;0.029229;0.026289;0.000553;;0.000021;0.001624;0.029580;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.006041;0.511175;0.538834;0.013430;;0.000220;0.003071;0.546279;0;0.000810;0.034338;0.028793;0.000526;;0.000073;0.001562;0.031418;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+2000;0.006011;0.511709;0.533965;0.013822;;0.000211;0.002747;0.543885;0;0.000727;0.030731;0.027533;0.000913;;0.000067;0.001540;0.028507;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.044061;1.384680;1.339638;0.069392;;0.000457;0.002863;1.307093;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.047486;1.344218;1.304584;0.068820;;0.000573;0.002282;1.322847;0;0.003425;0.040462;0.035054;0.000572;;0.000116;0.000582;0.015753;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.047336;1.337897;1.307603;0.068417;;0.000538;0.002587;1.315201;0;0.002804;0.034225;0.028938;0.000737;;0.000107;0.000642;0.016803;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.047524;1.328550;1.318121;0.068033;;0.000625;0.002437;1.313045;0;0.002450;0.033773;0.030983;0.000921;;0.000177;0.000613;0.015024;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+5000;0.047433;1.332305;1.320484;0.067907;;0.000603;0.002390;1.309937;0;0.002199;0.031126;0.028112;0.000862;;0.000164;0.000556;0.014805;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10000;0.194581;2.688935;2.942591;0.287403;;0.001241;0.003285;2.833138;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10000;0.194499;2.836232;2.926712;0.290335;;0.001260;0.003096;2.869358;0;0.000081;0.147298;0.015879;0.002932;;0.000019;0.000189;0.036220;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10000;0.190953;2.794121;2.924129;0.288917;;0.001164;0.002828;2.900553;0;0.005016;0.134206;0.013470;0.003123;;0.000136;0.000409;0.053112;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10000;0.203250;2.824922;2.927094;0.287228;;0.001187;0.002755;2.882872;0;0.021738;0.127885;0.012745;0.003984;;0.000124;0.000377;0.055259;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+10000;0.198384;2.785552;2.971010;0.286375;;0.001136;0.002598;2.853494;0;0.021743;0.138865;0.088570;0.003951;;0.000151;0.000460;0.076780;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+20000;0.833283;6.181478;6.348141;1.267629;;0.002039;0.006180;6.108460;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+20000;0.793030;6.071849;6.153237;1.230398;;0.001985;0.004596;6.183435;0;0.040253;0.109629;0.194904;0.037231;;0.000054;0.001584;0.074975;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+20000;0.802355;6.072243;6.260505;1.221699;;0.002144;0.004440;6.221974;0;0.035413;0.089513;0.219860;0.032794;;0.000229;0.001312;0.081964;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+20000;0.807962;6.260365;6.223003;1.236007;;0.002158;0.004174;6.267867;0;0.032169;0.334931;0.201179;0.037692;;0.000200;0.001226;0.106569;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+20000;0.809444;6.173393;6.158672;1.244747;;0.002122;0.004121;6.264114;0;0.028926;0.346409;0.221207;0.037975;;0.000192;0.001102;0.095613;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50000;6.092977;16.712836;15.877364;8.093751;;0.004881;0.003574;16.008791;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50000;5.806911;16.542321;15.879574;8.091555;;0.004819;0.003053;16.212562;0;0.286066;0.170514;0.002210;0.002196;;0.000062;0.000520;0.203771;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50000;5.960413;16.356078;15.832469;8.304106;;0.005695;0.003210;16.024799;0;0.318875;0.297921;0.066641;0.300597;;0.001240;0.000479;0.313355;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50000;5.843005;16.184512;15.776670;8.364262;;0.005462;0.003246;16.187635;0;0.342950;0.393538;0.112568;0.280402;;0.001148;0.000419;0.391395;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+50000;5.751895;16.388639;15.734835;8.396141;;0.005304;0.003480;16.287863;0;0.356785;0.539045;0.130911;0.258777;;0.001074;0.000601;0.403404;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100000;23.753765;33.433488;34.922648;44.386730;;0.010710;0.003334;30.140727;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100000;21.835040;31.948615;32.802305;39.253022;;0.011092;0.002812;29.608787;0;1.918726;1.484873;2.120343;5.133709;;0.000381;0.000522;0.531940;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100000;21.417374;31.497628;33.309856;40.467441;;0.010880;0.003393;31.779549;0;1.674284;1.369919;1.874154;4.529857;;0.000432;0.000925;3.100492;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100000;21.921148;32.565076;34.271107;40.883581;;0.010845;0.003529;31.507500;0;1.692271;2.196781;2.325156;3.988636;;0.000379;0.000835;2.726137;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+100000;22.189144;32.424382;33.634482;40.022548;;0.010630;0.003459;31.448977;0;1.605713;1.984907;2.438492;3.961425;;0.000548;0.000759;2.441139;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200000;100.588915;61.527809;61.185248;196.255423;;0.018809;0.003652;62.290647;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200000;98.466155;61.342833;62.082429;194.470469;;0.019256;0.003488;61.789755;0;2.122760;0.184976;0.897181;1.784954;;0.000447;0.000164;0.500892;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200000;97.095106;62.058284;62.249118;192.490568;;0.019141;0.003730;61.119406;0;2.600696;1.023010;0.769541;3.156589;;0.000400;0.000366;1.032472;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200000;96.508708;61.585842;61.983014;191.176788;;0.018976;0.003668;60.787790;0;2.470689;1.206033;0.810295;3.556838;;0.000448;0.000335;1.062735;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+200000;96.086018;61.255764;62.072512;195.124682;;0.019193;0.003837;62.641598;0;2.366033;1.264681;0.746527;8.512600;;0.000590;0.000452;3.827526;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+300000;323.985868;112.512681;105.901657;850.191802;;0.056080;0.005353;283.346429;0;0.000000;0.000000;0.000000;0.000000;;0.000000;0.000000;0.000000;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+300000;357.747499;89.591209;88.113951;714.552412;;0.044785;0.004375;175.790435;0;33.761630;22.921472;17.787706;135.639390;;0.011294;0.000978;107.555994;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+300000;332.428114;81.597397;80.301590;667.341569;;0.040471;0.004176;139.224077;0;45.188947;21.864690;18.248314;129.317787;;0.011058;0.000847;101.913648;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+300000;315.046951;77.798157;77.180617;647.718465;;0.038720;0.004046;130.338535;0;49.374540;20.046226;16.702459;117.036388;;0.010045;0.000767;89.591586;0
+Wielkosc drzewa;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania;Drzewo AVL;Czas tworzenia;Czas znalezienia min;Czas inOrder;Czas zbalansowania
+300000;307.642514;83.190733;81.998223;635.049054;;0.036779;0.003932;124.630336;0;46.578739;20.923682;17.776810;107.703616;;0.009787;0.000723;80.942300;0
